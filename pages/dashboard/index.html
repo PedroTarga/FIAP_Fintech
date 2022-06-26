@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Our App's Dashboard">
+  <meta name="author" content="Pedro Targa">
+  <title>Dashboard</title>
+
+  <link href="../../styles/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <style>
+    .outer-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 25vh;
+      width: 25vh;
+      border-radius: 100%;
+    }
+
+    .inner-circle {
+      display: flex;
+      justify-content: center;
+      padding-top: 15px;
+      align-items: center;
+      background: white;
+      height: 22vh;
+      width: 22vh;
+      border-radius: 100%;
+    }
+  </style>
+
+  <header-component></header-component>
+
+  <div class="container-fluid">
+    <div class="row">
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div
+          class="d-flex justify-content-between flex-column flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+
+          <h1 class="h2">Dashboard</h1>
+
+          <div class="d-flex flex-row w-100 justify-content-evenly mt-3 mb-3">
+            <div class="d-flex flex-column" style="align-items: center">
+              <h3 for="recebimentos">Recebimentos</h3>
+              <div name="recebimentos" class="outer-circle" style="background: green">
+                <div class="inner-circle">
+                  <p>R$1800,00</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column" style="align-items: center">
+              <h3 for="despesas">Despesas</h3>
+              <div name="despesas" class="outer-circle" style="background: red">
+                <div class="inner-circle">
+                  <p>R$1240,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Movimentações Recentes</h2>
+        <div class="card p-3 w-100">
+          <ul class="list-group">
+            <li class="list-group-item">Salário</li>
+            <li class="list-group-item">FIAP</li>
+            <li class="list-group-item">Netflix</li>
+            <li class="list-group-item">Amazon Prime</li>
+          </ul>
+          <a href="../movimentacoes/index.html" class="btn btn-primary mt-2">Detalhes</a>
+        </div>
+    </div>
+    </main>
+  </div>
+  </div>
+
+  <script src="../../scripts/bootstrap.bundle.min.js"></script>
+  <script src="../../components/header.js" type="text/javascript" defer></script>
+</body>
+
+</html>
